@@ -12,11 +12,13 @@ nav .brand{
     align-items: center;
 }
 
+/*Web Logo*/
 nav .brand img{
 height: 50px;
-margin: 0 5px;
+margin: 5px;
 }
 
+/* Navigation Olympian ASB title*/
 nav .brand a{
     color: white;
     text-decoration: none;
@@ -28,9 +30,11 @@ nav ul{
     display: flex;
 }
 
+/*Articles in Nav*/
 nav ul li{
     list-style: none;
-    margin: 0 10px;
+    margin: 10px;
+    font-size: 1.25rem;
 }
 
 nav ul li a{
@@ -41,10 +45,12 @@ nav ul li a{
     position: relative;
 }
 
+/*Changes Article text color when pointer hovers over text*/
 nav ul li a:hover{
     color: #C4B454;
 }
 
+/*creates underline when hover over article*/
 nav ul li a::after{
     content: '';
     width: 100%;
@@ -67,6 +73,7 @@ nav .fa{
     display: none;
 }
 
+/*Smaller device view*/
 @media screen and (max-width:600px) {
 
     nav .fa{

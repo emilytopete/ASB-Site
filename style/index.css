@@ -5,29 +5,44 @@
 }
 
 .main-content{
+  width: 75%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: teal;
+    border-style: ridge;
+    border-color: black;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-width: .75rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .main-content h1{
     font-size: 3rem;
+    margin-top: 1rem;
 }
 
 .main-content p{
     font-size: 1.2rem;
     margin: .5rem 0; /*what does 0 do? */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 @media screen and (max-width: 600px) {
     .main-content h1 {
       font-size: 2.25rem;
+      text-align: center;
     }
   
     .main-content p {
       font-size: 1rem;
+      text-align: center;
     }
   
     .gradient-btn {

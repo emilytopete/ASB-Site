@@ -5,11 +5,13 @@
   min-height: 100vh;
 }
 
-.marquee{
+.marquee {
   margin-top: 80px;
+  padding-bottom: 80px;
   width: 75%;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden; /* prevents overflow */
 }
 
 .marquee-top {
@@ -28,6 +30,7 @@
 .marquee-top img {
   height: 100px;
   margin-right: 1.5vw; /* equal spacing between image and each word */
+  flex-shrink: 0; /* prevents the image from shrinking */
 }
 
 .marquee-top h1 {
@@ -37,12 +40,14 @@
   text-align: center;
   display: flex; /* equal spacing */
   align-items: center;
+  flex-wrap: wrap; /* allows  words to stay in border */
+  min-width: 0; /* allows text to shrink within the flex container */
 }
 
 .marquee-top h1 span {
   padding: 0 1.5vw; /* equal padding between words */
-  flex-wrap: wrap; /* allows  words to stay in border */
-  white-space: nowrap; /* prevents words from breaking into multiple lines when zoomed */
+  flex-wrap: wrap; /* allows words to stay in border */
+  white-space: normal; /* allows words to break into multiple lines when zoomed */
 }
 
 

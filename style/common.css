@@ -12,4 +12,17 @@ body{
 ::selection {
     color: black;
     background: #C5B358;
-  }
+}
+
+/*used with span to highlight words*/
+.gold{
+    color: #C5B358;
+}
+
+.teal{
+    color: teal;
+}
+
+.black{
+    color: black;
+}

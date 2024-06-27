@@ -1,174 +1,67 @@
-.home-main{
-    background: url('../images/Olympian\ Campus.jpg') no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+:root {
+  --image-padding: 4vw; /* Using vw (viewport width) unit for relative and responsive spacing */
 }
 
-.main-content{
+.home-main {
+  background: url('../images/Olympian\ Campus.jpg') no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.marquee-top {
   width: 75%;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: black;
-    border-style: ridge;
-    border-color: teal;
-    color: white;
-    border-width: .75rem;
-    padding: 2rem;
-    box-sizing: border-box;
-    text-align: center;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border-style: ridge;
+  border-color: teal;
+  border-width: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /* Ensures even space between image and text */
+  align-items: center;
+  padding-left: calc(var(--image-padding)*2); /* Calculate padding based on half of --image-padding */
+  padding-right: calc(var(--image-padding)*2); /* Calculate padding based on half of --image-padding */
 }
 
-.main-content h1{
-    font-size: 3rem;
-    margin-top: 1rem;
+.marquee-top img {
+  height: 7.5vw; /* Using vw unit for responsive image height */
+  width: auto; /* Ensure image scales proportionally */
 }
 
-.main-content p{
-    font-size: 1.2rem;
-    margin: .5rem 0; /*what does 0 do? */
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+.marquee-top h1 {
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .main-content h1 {
-      font-size: 2.25rem;
-      text-align: center;
-    }
-  
-    .main-content p {
-      font-size: 1rem;
-      text-align: center;
-    }
-  
-    .gradient-btn {
-      width: 175px;
-      height: 40px;
-      font-size: 0.8rem;
-    }
-  }
-  
-  .about {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .about > h1 {
-    font-size: 3rem;
-    margin: 1rem 0;
-  }
-  
-  .about-sub {
-    display: flex;
-    max-width: 800px;
-    margin: 1rem auto;
-    text-align: left;
-  }
-  
-  .about-sub > img {
-    max-height: 250px;
-    width: 300px;
-    max-width: 90%;
-    animation: animateimage 1s linear;
-  }
-  
-  @keyframes animateimage {
-    from {
-      transform: translateY(-15px);
-      opacity: 0.5;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .about-sub .sub-sub-about {
-    padding: 1rem;
-    animation: animatetext 0.5s linear;
-  }
-  
-  @keyframes animatetext {
-    from {
-      transform: translateY(15px);
-      opacity: 0.5;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .about-sub .sub-sub-about p {
-    font-size: 14px;
-  }
-  
-  .about-sub .gradient-btn {
-    width: 100px;
-    margin-top: 5px;
-    height: 30px;
-    font-size: 12px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .about-sub {
-      flex-direction: column;
-    }
-  
-    .about-sub:nth-child(3) {
-      flex-direction: column-reverse;
-    }
-  }
-  
-  .about-companies{
-      max-width: 800px;
-      width: 90%;
-      background-color: #f1f1f1;
-      padding: 1rem .5rem;
-      margin:1rem auto;
-  }
-  
-  .about-companies h1{
-      font-size: 2rem;
-      color: #444;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-  }
-  
-  .about-companies h1 span{
-      color: #000;
-  }
-  
-  .about-companies .company-logos{
-      display: flex;
-      justify-content: space-evenly;
-      color: #666;
-      font-size: 2rem;
-      transition: .3s ease-in;
-      max-width: 75%;
-      margin: 0pc auto;
-  }
-  
-  .about-companies .company-logos .fa:hover{
-      color: #000;
-  }
-  
-  @media screen and (max-width:750px) {
-      .about-companies h1{
-          font-size: 1.5rem;
-      }
-  }
-  
-  @media screen and (max-width:600px) {
-      .about-companies h1{
-          font-size: 1.2rem;
-      }
-  
-      .about-companies .company-logos{
-          font-size: 1rem;
-      }
-  }
+.marquee-bottom {
+  width: 75%;
+  margin-top: -1rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  border-style: ridge;
+  border-color: teal;
+  color: white;
+  border-width: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.marquee-bottom h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.marquee-bottom p {
+  font-size: 1.2rem;
+  margin: .5rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

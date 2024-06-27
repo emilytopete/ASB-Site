@@ -52,25 +52,21 @@
                 </div>
             </div>
         </section>
-    </body>
-    <div>
         <footer>
             <div class="container"> 
                 <div class="column">
                     <h3>ADDRESS</h3>
-                    <p>
-                        1925 Magdalena Ave, Chula Vista, CA 91913
-                    </p>
+                    <p>1925 Magdalena Ave, Chula Vista, CA 91913</p>
                 </div>
                 <div class="column">
                     <h3>CONTACT</h3>
-                    <p>Sesha.Haynes@sweetwaterschools.org</p>
+                    <p id="email">Sesha.Haynes@sweetwaterschools.org</p>
                     <p>(619) 656-2400</p>
                 </div>
                 <div class="column">
                     <h3>HOURS</h3>
                     <p> 
-                        We are open Monday to Thursday,from 8:30 am to 4:00 pm and on Friday from 9:30 am to 4:00 pm.
+                        We are open Monday to Thursday, from 8:30 am to 4:00 pm and on Friday from 9:30 am to 4:00 pm.
                     </p>
                 </div>
             </div>
@@ -85,5 +81,18 @@
                 </p>
             </section>
         </footer>
-    </div>
+    
+        <!-- JavaScript for email address hyphenation -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var emailElements = document.querySelectorAll('.column p, .notes p');
+    
+                emailElements.forEach(function(element) {
+                    var text = element.textContent;
+                    var hyphenatedText = text.replace(/@/g, '&shy;@&shy;').replace(/\./g, '&shy;.&shy;');
+                    element.innerHTML = hyphenatedText;
+                });
+            });
+        </script>
+    </body>
 </html>

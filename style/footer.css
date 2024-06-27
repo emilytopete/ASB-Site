@@ -1,6 +1,8 @@
 footer {
     background-color: black;
     color: white;
+    display: flex; /* layout */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -9,15 +11,24 @@ footer {
     padding-right: 3rem;
     font-size: 1rem;
     flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box; /* includes padding and border in width and height */
 }
 
 .container {
     justify-content: space-between;
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .column {
-    flex: 1; /* equal spacing*/
+    flex: 1; /* equal spacing */
+    box-sizing: border-box; /* include padding and border in the element's total width and height */
+    min-width: 0; /* allows columns to shrink */
+    margin: 20px;
+    max-width: calc(33.33% - 40px); /* approximately equal columns, considering the margin */
 }
 
 .column h3 {
@@ -30,10 +41,28 @@ footer {
     margin-bottom: 1rem;
 }
 
-.notes{
+#email{
+    word-break: break-all;
+    hyphens: auto;
+}
+.notes {
     padding-bottom: 2rem;
 }
 
-.notes p{
+.notes p {
     padding-top: 1rem;
+}
+
+/* design for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* stack columns */
+        align-items: center;
+        padding: 0;
+    }
+
+    .column {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }

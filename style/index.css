@@ -28,9 +28,10 @@
 }
 
 .marquee-top img {
-  height: 100px;
+  max-height: 100px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
   margin-right: 1.5vw; /* equal spacing between image and each word */
-  flex-shrink: 0; /* prevents the image from shrinking */
 }
 
 .marquee-top h1 {

@@ -44,7 +44,7 @@ footer {
 
 #email{
     word-break: break-all;
-    hyphens: auto;
+    hyphens: auto; /* tried adding but sometimes works */
 }
 .notes {
     padding-bottom: 2rem;

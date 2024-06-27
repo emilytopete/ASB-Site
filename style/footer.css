@@ -27,7 +27,8 @@ footer {
     flex: 1; /* equal spacing */
     box-sizing: border-box; /* include padding and border in the element's total width and height */
     min-width: 0; /* allows columns to shrink */
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     max-width: calc(33.33% - 40px); /* approximately equal columns, considering the margin */
 }
 

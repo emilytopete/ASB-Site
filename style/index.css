@@ -1,6 +1,3 @@
-:root {
-  --image-padding: 4vw; /* Using vw (viewport width) unit for relative and responsive spacing */
-}
 
 .home-main {
   background: url('../images/Olympian\ Campus.jpg') no-repeat;
@@ -8,26 +5,29 @@
   min-height: 100vh;
 }
 
-.marquee-top {
-  width: 75%;
+.marquee{
   margin-top: 80px;
+  width: 75%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.marquee-top {
   background-color: white;
   border-style: ridge;
   border-color: teal;
   border-width: 1rem;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between; /* Ensures even space between image and text */
-  align-items: center;
-  padding-left: calc(var(--image-padding)*2); /* Calculate padding based on half of --image-padding */
-  padding-right: calc(var(--image-padding)*2); /* Calculate padding based on half of --image-padding */
+  justify-content: center; /* center content horizontally */
+  align-items: center; /* center content vertically */
+  padding-left: 1.5vw; /* equal spacing between left and image */
+  padding-right: 1.5vw; /* equal spacing between EAGLES and right */
 }
 
 .marquee-top img {
-  height: 7.5vw; /* Using vw unit for responsive image height */
-  width: auto; /* Ensure image scales proportionally */
+  height: 100px;
+  margin-right: 1.5vw; /* equal spacing between image and each word */
 }
 
 .marquee-top h1 {
@@ -35,33 +35,31 @@
   color: black;
   font-weight: bold;
   text-align: center;
+  display: flex; /* equal spacing */
+  align-items: center;
 }
 
+.marquee-top h1 span {
+  padding: 0 1.5vw; /* equal padding between words */
+  flex-wrap: wrap; /* allows  words to stay in border */
+  white-space: nowrap; /* prevents words from breaking into multiple lines when zoomed */
+}
+
+
 .marquee-bottom {
-  width: 75%;
   margin-top: -1rem;
-  margin-right: auto;
-  margin-left: auto;
   background-color: black;
   border-style: ridge;
   border-color: teal;
   color: white;
   border-width: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   box-sizing: border-box;
   text-align: center;
 }
 
-.marquee-bottom h1 {
-  font-size: 3rem;
-  margin-top: 1rem;
-}
-
 .marquee-bottom p {
-  font-size: 1.2rem;
-  margin: .5rem 0;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding-bottom: 1.5rem;
 }

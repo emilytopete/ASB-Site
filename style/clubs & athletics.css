@@ -1,24 +1,25 @@
 .title {
-    background: url('../images/Football\ Field.jpg') no-repeat;
-    background-position: center;
-    background-size:cover;
-    padding: 4rem;
+  background: url('../images/Football\ Field.jpg') no-repeat;
+  background-position: center;
+  background-size:cover;
+  padding: 4rem;
+  margin-bottom: 5vw;
 }
 
 .title h1 {
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-size: 4.5rem;
-    text-shadow: 2px 2px 4px black;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px 4px black;
 }
 
 .title h1 span {
-    padding: 0 1vw; /* equal padding between words */
+  padding: 0 1vw; /* equal padding between words */
 }
 
 .content {
-    background-color: rgba(197,179,88,.1);
+  background-color: rgba(197,179,88,.1);
 }
 
 * {box-sizing: border-box}
@@ -64,4 +65,46 @@
   width: 70%;
   border-left: none;
   height: 300px;
+}
+
+.main-content {
+  margin-top: 5vw;
+  width: 70%;
+  margin: auto auto;
+}
+
+.clubs {
+  background-color: bisque;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+
+.clubs h2 {
+  margin-bottom: 2vw;
+}
+
+.clubs h3 {
+  margin-bottom: 1vw;
+}
+
+.clubs p {
+  text-align: left;
+}
+
+.athletics {
+  background-color: azure;
+  margin-bottom: 5vw;
+  text-align: center;
+}
+
+.athletics h2 {
+  margin-bottom: 2vw;
+}
+
+.athletics h3 {
+  margin-bottom: 1vw;
+}
+
+.athletics p {
+  text-align: left;
 }

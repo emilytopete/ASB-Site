@@ -10,38 +10,36 @@
   width: 75%;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden; /* prevents overflow */
+  overflow: hidden;
   text-align: center;
 }
 
 .marquee-top {
   background-color: white;
-  border-style: ridge;
-  border-color: teal;
-  border-width: 1rem;
+  border: 1vw ridge teal;
   box-sizing: border-box;
-  display: flex; /* equal spacing */
-  align-items: center; /* center items vertically */
-  justify-content: center; /* center items horizontally */
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
-  flex-wrap: wrap; /* allow text to wrap */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+  gap: 1vw; /* Adds spacing between flex items */
 }
 
 .marquee-top img {
-  max-height: 100px;
-  max-width: 100%; /* keeps image within marquee */
+  max-width: 100%;
   transition: transform 0.3s ease; /* smooth transition for scale changes */
-  margin-right: 1.5vw; /* space between image and text */
+  margin-right: 1.5rem; /* space between image and text */
 }
 
 .marquee-top h1 {
-  font-size: 3rem;
+  font-size: 3vw; /* Use vw units for font size */
   color: black;
   font-weight: bold;
+  display: flex; /* Ensures items align correctly */
   align-items: center;
   flex-wrap: wrap;
-  min-width: 0; /* allows text to shrink */
+  min-width: 0;
+  margin: 0; /* Remove default margins */
 }
 
 .marquee-top h1 span {
@@ -49,40 +47,51 @@
 }
 
 .marquee-bottom {
-  margin-top: -1rem;
+  margin-top: -1vw;
   background-color: #1e1e1e;
   border-style: ridge;
   border-color: teal;
   color: white;
-  border-width: 1rem;
-  padding: 1.5rem;
+  border-width: 1vw;
   box-sizing: border-box;
   text-align: center;
+  padding-top: 2vw;
 }
 
 .marquee-bottom p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  padding-bottom: 1.5rem;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  padding-bottom: 2vw;
 }
 
 @media (max-width: 768px) {
-  .marquee-top {
-    flex-direction: row; /* layout for small screens */
-    justify-content: center;
-    text-align: center;
-  }
-
-  .marquee-top img {
-    max-height: 80px;
-    margin-right: 1.5vw;
+  .marquee {
+    width: 90%; /* Adjust width for smaller screens */
   }
 
   .marquee-top h1 {
-    font-size: 2rem;
+    font-size: 4vw; /* Adjust font size */
   }
 
-  .marquee-top h1 span {
-    padding: 0 0.5vw; /* less padding between words */
+  .marquee-bottom p {
+    font-size: 1.2rem; /* Reduce font size */
+    line-height: 2rem; /* Adjust line height */
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-top img {
+    max-height: 15vw; /* Further reduce image height */
+    max-width: 30vw; /* Further reduce image width */
+    margin-right: 1rem; /* Adjust margin */
+  }
+
+  .marquee-top h1 {
+    font-size: 5vw; /* Further reduce font size */
+  }
+
+  .marquee-bottom p {
+    font-size: 1rem; /* Further reduce font size */
+    line-height: 1.5rem; /* Adjust line height */
   }
 }

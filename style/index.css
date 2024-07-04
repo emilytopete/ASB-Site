@@ -1,51 +1,46 @@
 .home-main {
-  background: url('../images/Olympian\ Campus.jpg') no-repeat;
+  background: url('../images/Olympian Campus.jpg') no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
 .marquee {
-  margin-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 6%; /* Adjust padding as a percentage of the viewport height */
   width: 75%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   overflow: hidden;
   text-align: center;
 }
 
 .marquee-top {
-  height: fit-content;
+  height: auto; /* Allow content to dictate height */
   background-color: white;
   border: 1vw ridge teal;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
-  gap: 1vw; /* Adds spacing between flex items */
+  gap: 1vw;
+  max-height: 8vw; /* Maximum height of .marquee-top */
+  overflow: hidden; /* Hide overflow to prevent stretching */
 }
 
 .marquee-top img {
-  height: 6vw;
-  transition: transform 0.3s ease; /* smooth transition for scale changes */
-  margin-right: 1.5rem; /* space between image and text */
+  width: auto; /* Allow image to adjust width */
+  max-height: 6vw; /* Ensure image scales proportionally */
+  
 }
 
 .marquee-top h1 {
-  font-size: 3vw; /* Use vw units for font size */
+  flex: 2; /* Take up 2 parts of the available space */
+  font-size: 3vw; /* Font size relative to viewport width */
   color: black;
   font-weight: bold;
-  display: flex; /* Ensures items align correctly */
-  align-items: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  padding-top: 1.5vw; /* Remove default margins */
-  padding-bottom: 1.5vw; /* Remove default margins */
+  text-align: center; /* Center-align the text */
+  padding: 1vw; /* Padding around the content */
 }
 
 .marquee-top h1 span {
-  padding: 0 1.5vw; /* equal padding between words */
+  padding: 0 1vw; /* Horizontal padding */
 }
 
 .marquee-bottom {
@@ -55,15 +50,14 @@
   border-color: teal;
   color: white;
   border-width: 1vw;
-  box-sizing: border-box;
   text-align: center;
-  padding-top: 2vw;
+  padding: 2rem 1rem 1rem;
 }
 
 .marquee-bottom p {
   font-size: 1.5vw;
   line-height: 2.5vw;
-  padding-bottom: 2vw;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -72,28 +66,22 @@
   }
 
   .marquee-top h1 {
-    font-size: 4vw; /* Adjust font size */
+    font-size: 4vw; /* Adjust font size for smaller screens */
   }
 
   .marquee-bottom p {
-    font-size: 1.2rem; /* Reduce font size */
-    line-height: 2rem; /* Adjust line height */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    line-height: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .marquee-top img {
-    max-height: 15vw; /* Further reduce image height */
-    max-width: 30vw; /* Further reduce image width */
-    margin-right: 1rem; /* Adjust margin */
-  }
-
   .marquee-top h1 {
-    font-size: 5vw; /* Further reduce font size */
+    font-size: 5vw; /* Further adjust font size for smaller screens */
   }
 
   .marquee-bottom p {
-    font-size: 1rem; /* Further reduce font size */
-    line-height: 1.5rem; /* Adjust line height */
+    font-size: 1rem; /* Further adjust font size for smaller screens */
+    line-height: 1.5rem;
   }
 }

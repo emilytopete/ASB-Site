@@ -9,9 +9,7 @@
 }
 
 .marquee {
-  margin-top: 70px;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  margin-top: 17.5vh;
   width: 75%;
   overflow: hidden;
   text-align: center;
@@ -22,7 +20,7 @@
 .marquee-top {
   height: auto; /* Allow content to dictate height */
   background-color: white;
-  border: 1vw ridge teal;
+  border: 1.2vw ridge teal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,12 +50,12 @@
 }
 
 .marquee-bottom {
-  margin-top: -1vw;
+  margin-top: -1.2vw;
   background-color: #1e1e1e;
   border-style: ridge;
   border-color: teal;
   color: white;
-  border-width: 1vw;
+  border-width: 1.2vw;
   text-align: center;
   padding: 2rem 1rem 1rem;
 }

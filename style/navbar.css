@@ -6,10 +6,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
-    position: relative;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Ensure it stays at the top */
     z-index: 100;
-    margin-bottom: 70px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    padding-left: 1vw;
+    padding-right: 2vw;
 }
 
 nav .brand {
@@ -37,7 +39,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Adjust spacing between menu items */
+    margin: 0 10px; /* Adjust spacing between menu items */
     font-size: 1.5rem;
 }
 
@@ -77,43 +79,47 @@ nav .fa {
 }
 
 /* Smaller device view */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1050px) {
+  nav {
+    min-height: 70px;
+  }  
     nav .fa {
         display: block;
     }
 
-    nav .brand img {
-        height: 40px;
-    }
-
     nav .brand a {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
-
     nav ul {
         flex-direction: column;
-        position: absolute;
-        top: 70px;
+        position: fixed; /* Fixed position for the mobile menu */
+        top: 70px; /* Position below the navigation bar */
         right: 0;
-        width: 200px;
+        width: 100vw; /* Full width of the viewport */
         background-color: teal;
         padding: 10px;
         z-index: 99;
-        transform: scaleX(0);
-        transform-origin: right;
+        transform: scaleY(0);
+        transform-origin: top;
         transition: transform 0.3s ease-in-out;
     }
 
     nav ul.active {
-        transform: scaleX(1);
+        transform: scaleY(1);
+    }
+
+    nav ul.active li a::after {
+        content: none; /* Remove the underline */
     }
 
     nav ul li {
         margin-top: 10px;
+        text-align: center;
     }
 
     nav ul li a {
-        font-size: 1rem;
+        font-size: 4vw;
         font-weight: bold;
+        display: block; /* Ensure the links take up the full width */
     }
 }

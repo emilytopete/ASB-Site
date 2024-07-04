@@ -51,23 +51,7 @@ footer {
 
 .column a:hover {
     color: teal;
-}
-
-.column a::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    background: teal;
-    position: absolute;
-    bottom: -2px; /* Adjust if needed for better spacing */
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform .3s ease-in-out;
-}
-
-.column a:hover::after {
-    transform: scaleX(1);
+    text-decoration: underline;
 }
 
 .notes {

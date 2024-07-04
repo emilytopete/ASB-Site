@@ -15,6 +15,7 @@
 }
 
 .marquee-top {
+  height: fit-content;
   background-color: white;
   border: 1vw ridge teal;
   box-sizing: border-box;
@@ -26,7 +27,7 @@
 }
 
 .marquee-top img {
-  max-width: 100%;
+  height: 6vw;
   transition: transform 0.3s ease; /* smooth transition for scale changes */
   margin-right: 1.5rem; /* space between image and text */
 }
@@ -39,7 +40,8 @@
   align-items: center;
   flex-wrap: wrap;
   min-width: 0;
-  margin: 0; /* Remove default margins */
+  padding-top: 1.5vw; /* Remove default margins */
+  padding-bottom: 1.5vw; /* Remove default margins */
 }
 
 .marquee-top h1 span {

@@ -3,14 +3,15 @@
   background: url('../images/Football\ Field.jpg') no-repeat;
   background-position: center;
   background-size:cover;
-  padding: 4rem;
+  height: 15vw;
 }
 
 .title h1 {
   text-align: center;
   align-items: center;
+  padding-top: 3vw;
   color: white;
-  font-size: 4.5rem;
+  font-size: 6vw;
   text-shadow: 2px 2px 4px black;
 }
 
@@ -20,19 +21,22 @@
 
 
 .main-content {
-  background-color: #d9c28f;
+  background-color: #D5CA87;
   padding: 5vw;
 }
 
 .resources {
-  width: 70%;
+  width: 100%;
   margin: auto auto;
   text-align: center;
+  border-style: double;
+  border-color: black;
+  border-width: .75vw;
 }
 
 .clubs {
-  background-color: bisque;
-  padding-bottom: 5vw;
+  padding: 5vw;
+  background-color: #F3F0DC;
 }
 
 .clubs h2 {
@@ -48,7 +52,8 @@
 }
 
 .athletics {
-  background-color: azure;
+  padding: 5vw;
+  background-color: #F3F0DC;
   padding-bottom: 5vw;
 }
 

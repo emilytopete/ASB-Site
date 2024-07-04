@@ -84,17 +84,6 @@
     </footer>
 
     <script>
-        // JavaScript for email address hyphenation
-        document.addEventListener("DOMContentLoaded", function() {
-            var emailElements = document.querySelectorAll('.column p, .notes p');
-
-            emailElements.forEach(function(element) {
-                var text = element.textContent;
-                var hyphenatedText = text.replace(/@/g, '&shy;@&shy;').replace(/\./g, '&shy;.&shy;');
-                element.innerHTML = hyphenatedText;
-            });
-        });
-
         // JavaScript for mobile nav menu
         const menuIcon = document.querySelector('.fa-bars');
         const menu = document.querySelector('nav ul.menu');

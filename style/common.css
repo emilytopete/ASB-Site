@@ -26,3 +26,7 @@ body{
 .black{
     color: black;
 }
+
+mark {
+    background-color: #CFC376;
+}

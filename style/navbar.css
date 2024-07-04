@@ -1,6 +1,7 @@
 /* Navigation Bar */
 nav {
     height: 70px;
+    width: 100vw;
     background-color: teal;
     display: flex;
     align-items: center;
@@ -8,7 +9,7 @@ nav {
     padding: 0 2rem;
     position: relative;
     z-index: 100;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 nav .brand {

@@ -6,20 +6,18 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem 3rem; /* Combine padding for simplicity */
     font-size: 1rem;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100%; /* Ensure footer covers the whole screen width */
     box-sizing: border-box; /* includes padding and border in width and height */
 }
 
 .container {
     justify-content: space-between;
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%; /* Ensure container covers the whole screen width */
     box-sizing: border-box;
 }
 
@@ -27,8 +25,7 @@ footer {
     flex: 1; /* equal spacing */
     box-sizing: border-box; /* include padding and border in the element's total width and height */
     min-width: 0; /* allows columns to shrink */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px; /* Uniform margin for columns */
     max-width: calc(33.33% - 40px); /* approximately equal columns, considering the margin */
 }
 
@@ -40,9 +37,11 @@ footer {
 
 .column p {
     margin-bottom: 1rem;
+    word-break: break-word;
 }
 
 .column a {
+    text-bre;
     color: white;
     text-decoration: none;
     position: relative;
@@ -62,7 +61,7 @@ footer {
     padding-top: 1rem;
 }
 
-/* design for mobile devices */
+/* Design for mobile devices */
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* stack columns */

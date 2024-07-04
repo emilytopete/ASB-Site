@@ -1,15 +1,21 @@
 .home-main {
   background: url('../images/Olympian Campus.jpg') no-repeat;
+  background-position: center;
   background-size: cover;
   min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .marquee {
-  padding-bottom: 6%; /* Adjust padding as a percentage of the viewport height */
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   width: 75%;
-  margin: 0 auto;
   overflow: hidden;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .marquee-top {
@@ -20,23 +26,24 @@
   align-items: center;
   justify-content: center;
   gap: 1vw;
-  max-height: 8vw; /* Maximum height of .marquee-top */
+  height: fit-content;
   overflow: hidden; /* Hide overflow to prevent stretching */
+  padding: 1vw; /* Padding around the content */
 }
 
 .marquee-top img {
   width: auto; /* Allow image to adjust width */
-  max-height: 6vw; /* Ensure image scales proportionally */
-  
+  height: auto;
+  width: 25%;
+  max-width: 50%;
+  min-width: 25%;
 }
 
 .marquee-top h1 {
-  flex: 2; /* Take up 2 parts of the available space */
-  font-size: 3vw; /* Font size relative to viewport width */
+  font-size: 3rem;
   color: black;
   font-weight: bold;
   text-align: center; /* Center-align the text */
-  padding: 1vw; /* Padding around the content */
 }
 
 .marquee-top h1 span {
@@ -55,8 +62,8 @@
 }
 
 .marquee-bottom p {
-  font-size: 1.5vw;
-  line-height: 2.5vw;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   padding-bottom: 1rem;
 }
 

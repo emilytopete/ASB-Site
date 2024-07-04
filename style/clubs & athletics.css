@@ -56,9 +56,9 @@
 }
 
 .clubs p.club-list {
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-align: center;
-  padding-bottom: 1vw;
+  padding-bottom: 2vw;
 }
 
 a {
@@ -83,6 +83,18 @@ a {
   padding: 0 5vw 5vw 5vw
 }
 
+.athletics p.intro {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+
+.athletics p.athletics-docs {
+  font-size: 1.25rem;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
 .athletics h2 {
   font-size: 2.5rem;
   padding-bottom: 2vw;
@@ -97,6 +109,6 @@ a {
 .athletics p {
   font-size: 1rem;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 2vw;
   padding-bottom: 2vw;
 }

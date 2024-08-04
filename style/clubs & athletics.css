@@ -47,6 +47,7 @@
 .clubs h2 {
   font-size: 2.5rem;
   padding-bottom: 2vw;
+  padding-top: 1vw;
 }
 
 .clubs p.intro {
@@ -63,21 +64,33 @@
 
 a {
   color: teal;
+  padding-top: 3vh;
 }
 
 .clubs h3 {
   font-size: 1.5rem;
-  padding-bottom: 1vw;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
   text-align: left;
 }
 
 .clubs p {
   font-size: 1rem;
   text-align: left;
-  padding-left: 2vw;
-  padding-bottom: 2vw;
+  padding-left: 2vh;
+  padding-bottom: 2vh;
 }
 
+ul {
+  text-align: left;
+  font-size: 1rem;
+  color: teal;
+}
+
+.athletics ul li {
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
 .athletics {
   text-overflow: wrap;
   padding: 0 5vw 5vw 5vw

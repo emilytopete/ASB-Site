@@ -1,0 +1,27 @@
+.title {
+    background-color: white;
+    color: black;
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
+    width: 100vw;
+  }
+  
+  .title h1 {
+    text-align: center;
+    align-items: center;
+    padding-top: 17.5vh;
+    color: white;
+    font-size: 6vw;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  .title h1 span {
+    padding: 0 1vw; /* equal padding between words */
+  }
+  
+  .main-content {
+    background-color: #CFC376;
+    padding: 5vw;
+    min-height: 100vh;
+  }

@@ -1,6 +1,5 @@
 .title {
-    background-color: white;
-    color: black;
+    background-color: black;
     background-position: center;
     background-size: cover;
     min-height: 30vh;
@@ -12,16 +11,25 @@
     align-items: center;
     padding-top: 17.5vh;
     color: white;
-    font-size: 6vw;
-    text-shadow: 2px 2px 4px black;
-  }
-  
-  .title h1 span {
-    padding: 0 1vw; /* equal padding between words */
+    font-size: 6vw; /*may chang to rem */
+    text-shadow: 2px 2px 4px #CFC376;
   }
   
   .main-content {
     background-color: #CFC376;
     padding: 5vw;
     min-height: 100vh;
+  }
+
+  .contact-info {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    margin: auto auto;
+    text-align: center;
+    border-style: double;
+    border-color: #CFC376;
+    border-width: 1vw;
+    background-color: #F3F0DC;
+    word-wrap: break-word;
   }

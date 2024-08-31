@@ -1,35 +1,35 @@
 .title {
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    min-height: 30vh;
-    width: 100vw;
-  }
+  background: url('../images/Olympian\ Campus.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 30vh;
+  width: 100vw;
+}
   
-  .title h1 {
-    text-align: center;
-    align-items: center;
-    padding-top: 17.5vh;
-    color: white;
-    font-size: 6vw; /*may chang to rem */
-    text-shadow: 2px 2px 4px #CFC376;
-  }
+.title h1 {
+  text-align: center;
+  align-items: center;
+  padding-top: 17.5vh;
+  color: white;
+  font-size: 6vw; /*may chang to rem */
+  text-shadow: 2px 2px 4px black;
+}
   
-  .main-content {
-    background-color: #CFC376;
-    padding: 5vw;
-    min-height: 100vh;
-  }
+.main-content {
+  background-color: #CFC376;
+  padding: 5vw;
+  min-height: 100vh;
+}
 
-  .contact-info {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 100%;
-    margin: auto auto;
-    text-align: center;
-    border-style: double;
-    border-color: #CFC376;
-    border-width: 1vw;
-    background-color: #F3F0DC;
-    word-wrap: break-word;
-  }
+.contact-info {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  margin: auto auto;
+  text-align: center;
+  border-style: double;
+  border-color: #CFC376;
+  border-width: 1vw;
+  background-color: #F3F0DC;
+  word-wrap: break-word;
+}

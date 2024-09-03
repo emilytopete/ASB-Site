@@ -14,11 +14,34 @@
   font-size: 6vw; /*may chang to rem */
   text-shadow: 2px 2px 4px black;
 }
-  
+
 .main-content {
   background-color: #CFC376;
   padding: 5vw;
   min-height: 100vh;
+}
+
+.contact-info {
+padding: 1rem;
+padding-bottom: 2rem;
+color:black;
+}
+
+.contact-info h2 {
+  padding-top: 2rem;
+}
+
+.contact-info p a {
+  padding-top: 1.5rem;
+
+}
+
+.contact-info a {
+  color: teal;
+}
+.contact-info a:hover {
+  color: #C4B454;;
+  text-decoration: underline;
 }
 
 .contact-info {

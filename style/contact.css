@@ -32,8 +32,8 @@ color:black;
 }
 
 .contact-info p a {
-  padding-top: 1.5rem;
-
+  padding-top: rem;
+  padding-bottom: rem;
 }
 
 .contact-info a {
@@ -42,6 +42,12 @@ color:black;
 .contact-info a:hover {
   color: #C4B454;;
   text-decoration: underline;
+}
+
+.resources {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info {

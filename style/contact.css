@@ -64,17 +64,14 @@ color:black;
   word-wrap: break-word;
 }
 
-.assigned-counselors h2 {
-  font-size: 1.25rem;
-}
-
 .assigned-counselors h3 {
-  font-size: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  font-size: 1.25rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
 }
 
 .assigned-counselors p {
   font-size: 1rem;
   padding-bottom: .5rem;
+  padding-top: .5rem;
 }

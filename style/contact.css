@@ -67,3 +67,53 @@ color:black;
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
+ /* made with help of ai for nav
+/* Style for the navigation bar in desktop view */
+nav ul.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+nav ul.menu li {
+  margin: 0 20px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #000; /* Your preferred color */
+}
+
+/* Style for mobile view: initially hide the menu */
+@media (max-width: 768px) {
+  nav ul.menu {
+      display: none; /* Hide menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on the height of your navbar */
+      right: 0;
+      background-color: #fff; /* Background for the dropdown */
+      width: 200px; /* Adjust width for the dropdown */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for effect */
+  }
+
+  nav ul.menu.active {
+      display: block; /* Show menu when active class is toggled */
+  }
+
+  /* Style for the hamburger icon (menu button) */
+  .fa-bars {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
+
+/* Style for desktop view: hide the menu icon */
+@media (min-width: 769px) {
+  .fa-bars {
+      display: none;
+  }
+}

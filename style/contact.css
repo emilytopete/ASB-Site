@@ -29,11 +29,12 @@ color:black;
 
 .contact-info h2 {
   padding-top: 2rem;
+  font-size: 2rem;
 }
 
 .contact-info p a {
-  padding-top: rem;
-  padding-bottom: rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .contact-info a {
@@ -63,14 +64,14 @@ color:black;
   word-wrap: break-word;
 }
 
-.main-content .contact-info .counseling .assigned-counselors h2 {
-  font-size: 8rem;
+.assigned-counselors h2 {
+  font-size: 2rem;
 }
 
 .assigned-counselors h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-.assigned-counselors p {
-  font-size: rem;
+.assigned-counselors p a {
+  font-size: 1rem;
 }

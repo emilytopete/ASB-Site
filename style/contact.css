@@ -83,7 +83,7 @@ nav ul.menu li {
 
 nav ul.menu li a {
   text-decoration: none;
-  color: #000; /* Your preferred color */
+  color: teal;
 }
 
 /* Style for mobile view: initially hide the menu */

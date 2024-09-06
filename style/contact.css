@@ -32,9 +32,8 @@ color:black;
   font-size: 2rem;
 }
 
-.contact-info p a {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.contact-info p {
+  padding-top: .5rem;
 }
 
 .contact-info a {
@@ -43,12 +42,6 @@ color:black;
 .contact-info a:hover {
   color: #C4B454;;
   text-decoration: underline;
-}
-
-.resources {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-info {
@@ -66,8 +59,7 @@ color:black;
 
 .assigned-counselors h3 {
   font-size: 1.25rem;
-  padding-bottom: .5rem;
-  padding-top: .5rem;
+  padding-top: 1rem;
 }
 
 .assigned-counselors p {

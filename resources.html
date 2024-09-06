@@ -33,9 +33,10 @@
         <div class="title">
                 <h1>Resources</h1>
         </div>
+    </section>
+    <section class="main">
 
     </section>
-
     <footer>
         <div class="container">
             <div class="column">
@@ -64,6 +65,14 @@
             </p>
         </section>
     </footer>
+    <script> //not working also ai//
+        // JavaScript for mobile nav menu
+        const menuIcon = document.querySelector('.fa-bars');
+        const menu = document.querySelector('nav ul.menu');
 
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('active'); // Toggle the visibility of the menu
+        });
+    </script>
 </body>
 </html>
